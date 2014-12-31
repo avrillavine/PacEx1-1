@@ -324,7 +324,7 @@
                             <field name="VAR">value</field>
                             <value name="VALUE">
                               <block type="math_arithmetic" id="81" inline="true">
-                                <field name="OP">MINUS</field>
+                                <field name="OP">ADD</field>
                                 <value name="A">
                                   <block type="variables_get" id="82">
                                     <field name="VAR">value</field>
@@ -341,7 +341,7 @@
                               <block type="controls_if" id="84" inline="false">
                                 <value name="IF0">
                                   <block type="logic_compare" id="85" inline="true">
-                                    <field name="OP">LT</field>
+                                    <field name="OP">GT</field>
                                     <value name="A">
                                       <block type="variables_get" id="86">
                                         <field name="VAR">value</field>
