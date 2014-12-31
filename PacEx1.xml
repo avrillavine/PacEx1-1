@@ -349,7 +349,7 @@
                                     </value>
                                     <value name="B">
                                       <block type="math_number" id="87">
-                                        <field name="NUM">128</field>
+                                        <field name="NUM">-64</field>
                                       </block>
                                     </value>
                                   </block>
