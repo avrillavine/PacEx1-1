@@ -222,7 +222,7 @@
                                     <field name="VAR">value</field>
                                     <value name="VALUE">
                                       <block type="math_number" id="47">
-                                        <field name="NUM">138</field>
+                                        <field name="NUM">50</field>
                                       </block>
                                     </value>
                                   </block>
