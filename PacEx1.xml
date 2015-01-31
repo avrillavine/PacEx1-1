@@ -11,7 +11,7 @@
         <field name="VAR">valueY</field>
         <value name="VALUE">
           <block type="math_number" id="188">
-            <field name="NUM">1</field>
+            <field name="NUM">-1</field>
           </block>
         </value>
         <next>
@@ -356,8 +356,8 @@
                                           </block>
                                         </value>
                                         <value name="B">
-                                          <block type="math_number" id="78">
-                                            <field name="NUM">-64</field>
+                                          <block type="variables_get" id="191">
+                                            <field name="VAR">valueX</field>
                                           </block>
                                         </value>
                                       </block>
@@ -493,8 +493,8 @@
                                           </block>
                                         </value>
                                         <value name="B">
-                                          <block type="math_number" id="107">
-                                            <field name="NUM">64</field>
+                                          <block type="variables_get" id="192">
+                                            <field name="VAR">valueX</field>
                                           </block>
                                         </value>
                                       </block>
