@@ -375,7 +375,7 @@
                                             <field name="VAR">valueX</field>
                                             <value name="VALUE">
                                               <block type="math_number" id="196">
-                                                <field name="NUM">50</field>
+                                                <field name="NUM">0</field>
                                               </block>
                                             </value>
                                           </block>
@@ -522,7 +522,7 @@
                                             <field name="VAR">valueX</field>
                                             <value name="VALUE">
                                               <block type="math_number" id="198">
-                                                <field name="NUM">-64</field>
+                                                <field name="NUM">64</field>
                                               </block>
                                             </value>
                                           </block>
