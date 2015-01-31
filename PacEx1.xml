@@ -349,7 +349,7 @@
                                   <block type="controls_if" id="75" inline="false">
                                     <value name="IF0">
                                       <block type="logic_compare" id="76" inline="true">
-                                        <field name="OP">GTE</field>
+                                        <field name="OP">GT</field>
                                         <value name="A">
                                           <block type="variables_get" id="77">
                                             <field name="VAR">valueY</field>
@@ -380,8 +380,8 @@
                                             <next>
                                               <block type="oled_setcursor" id="83" inline="true">
                                                 <value name="STARTX">
-                                                  <block type="math_number" id="84">
-                                                    <field name="NUM">1</field>
+                                                  <block type="variables_get" id="194">
+                                                    <field name="VAR">valueX</field>
                                                   </block>
                                                 </value>
                                                 <value name="STARTY">
@@ -486,7 +486,7 @@
                                   <block type="controls_if" id="104" inline="false">
                                     <value name="IF0">
                                       <block type="logic_compare" id="105" inline="true">
-                                        <field name="OP">LTE</field>
+                                        <field name="OP">LT</field>
                                         <value name="A">
                                           <block type="variables_get" id="106">
                                             <field name="VAR">valueY</field>
@@ -517,8 +517,8 @@
                                             <next>
                                               <block type="oled_setcursor" id="112" inline="true">
                                                 <value name="STARTX">
-                                                  <block type="math_number" id="113">
-                                                    <field name="NUM">90</field>
+                                                  <block type="variables_get" id="193">
+                                                    <field name="VAR">valueX</field>
                                                   </block>
                                                 </value>
                                                 <value name="STARTY">
