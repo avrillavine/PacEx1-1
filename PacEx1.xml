@@ -496,7 +496,7 @@
                                     <field name="VAR">value</field>
                                     <value name="VALUE">
                                       <block type="math_number" id="109">
-                                        <field name="NUM">50</field>
+                                        <field name="NUM">64</field>
                                       </block>
                                     </value>
                                   </block>
