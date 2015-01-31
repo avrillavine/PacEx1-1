@@ -367,7 +367,7 @@
                                         <field name="VAR">valueY</field>
                                         <value name="VALUE">
                                           <block type="math_number" id="80">
-                                            <field name="NUM">128</field>
+                                            <field name="NUM">50</field>
                                           </block>
                                         </value>
                                       </block>
