@@ -349,7 +349,7 @@
                                   <block type="controls_if" id="75" inline="false">
                                     <value name="IF0">
                                       <block type="logic_compare" id="76" inline="true">
-                                        <field name="OP">GT</field>
+                                        <field name="OP">GTE</field>
                                         <value name="A">
                                           <block type="variables_get" id="77">
                                             <field name="VAR">valueY</field>
@@ -486,7 +486,7 @@
                                   <block type="controls_if" id="104" inline="false">
                                     <value name="IF0">
                                       <block type="logic_compare" id="105" inline="true">
-                                        <field name="OP">LT</field>
+                                        <field name="OP">LTE</field>
                                         <value name="A">
                                           <block type="variables_get" id="106">
                                             <field name="VAR">valueY</field>
