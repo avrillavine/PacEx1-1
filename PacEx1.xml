@@ -329,7 +329,7 @@
                             </value>
                             <statement name="DO">
                               <block type="variables_set" id="71" inline="true">
-                                <field name="VAR">valueX</field>
+                                <field name="VAR">valueY</field>
                                 <value name="VALUE">
                                   <block type="math_arithmetic" id="72" inline="true">
                                     <field name="OP">ADD</field>
@@ -367,7 +367,7 @@
                                         <field name="VAR">valueY</field>
                                         <value name="VALUE">
                                           <block type="math_number" id="80">
-                                            <field name="NUM">32</field>
+                                            <field name="NUM">50</field>
                                           </block>
                                         </value>
                                       </block>
@@ -494,7 +494,7 @@
                                         </value>
                                         <value name="B">
                                           <block type="math_number" id="107">
-                                            <field name="NUM">32</field>
+                                            <field name="NUM">64</field>
                                           </block>
                                         </value>
                                       </block>
@@ -504,7 +504,7 @@
                                         <field name="VAR">valueY</field>
                                         <value name="VALUE">
                                           <block type="math_number" id="109">
-                                            <field name="NUM">64</field>
+                                            <field name="NUM">-64</field>
                                           </block>
                                         </value>
                                       </block>
