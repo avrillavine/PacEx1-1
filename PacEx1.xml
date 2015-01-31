@@ -370,6 +370,16 @@
                                             <field name="NUM">50</field>
                                           </block>
                                         </value>
+                                        <next>
+                                          <block type="variables_set" id="195" inline="true">
+                                            <field name="VAR">valueX</field>
+                                            <value name="VALUE">
+                                              <block type="math_number" id="196">
+                                                <field name="NUM">50</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
                                       </block>
                                     </statement>
                                     <next>
@@ -507,6 +517,16 @@
                                             <field name="NUM">-64</field>
                                           </block>
                                         </value>
+                                        <next>
+                                          <block type="variables_set" id="197" inline="true">
+                                            <field name="VAR">valueX</field>
+                                            <value name="VALUE">
+                                              <block type="math_number" id="198">
+                                                <field name="NUM">-64</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
                                       </block>
                                     </statement>
                                     <next>
