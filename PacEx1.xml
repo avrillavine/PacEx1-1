@@ -1,588 +1,598 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="variables_set" id="1" inline="true" x="1" y="1">
-    <field name="VAR">value</field>
+    <field name="VAR">valueX</field>
     <value name="VALUE">
       <block type="math_number" id="2">
         <field name="NUM">1</field>
       </block>
     </value>
     <next>
-      <block type="controls_whileUntil" id="3" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_button" id="4">
-            <field name="OBJECT">ENTER</field>
+      <block type="variables_set" id="187" inline="true">
+        <field name="VAR">valueY</field>
+        <value name="VALUE">
+          <block type="math_number" id="188">
+            <field name="NUM">1</field>
           </block>
         </value>
-        <statement name="DO">
-          <block type="oled_setcursor" id="5" inline="true">
-            <value name="STARTX">
-              <block type="variables_get" id="6">
-                <field name="VAR">value</field>
+        <next>
+          <block type="controls_whileUntil" id="3" inline="false">
+            <field name="MODE">UNTIL</field>
+            <value name="NUMBER">
+              <block type="sensor_button" id="4">
+                <field name="OBJECT">ENTER</field>
               </block>
             </value>
-            <value name="STARTY">
-              <block type="math_number" id="7">
-                <field name="NUM">1</field>
+            <statement name="DO">
+              <block type="oled_setcursor" id="5" inline="true">
+                <value name="STARTX">
+                  <block type="variables_get" id="6">
+                    <field name="VAR">valueX</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="7">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="8" inline="false">
+                    <mutation elseif="3"></mutation>
+                    <value name="IF0">
+                      <block type="sensor_button" id="9">
+                        <field name="OBJECT">RIGHT</field>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="multimedia_playwav" id="10">
+                        <field name="WAV">pacman_w.wav</field>
+                        <next>
+                          <block type="controls_whileUntil" id="11" inline="false">
+                            <field name="MODE">WHILE</field>
+                            <value name="NUMBER">
+                              <block type="sensor_button" id="12">
+                                <field name="OBJECT">RIGHT</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="variables_set" id="13" inline="true">
+                                <field name="VAR">valueX</field>
+                                <value name="VALUE">
+                                  <block type="math_arithmetic" id="14" inline="true">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="15">
+                                        <field name="VAR">valueX</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="16">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="controls_if" id="17" inline="false">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="18" inline="true">
+                                        <field name="OP">GT</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="19">
+                                            <field name="VAR">valueX</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="20">
+                                            <field name="NUM">128</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="variables_set" id="21" inline="true">
+                                        <field name="VAR">valueX</field>
+                                        <value name="VALUE">
+                                          <block type="math_number" id="22">
+                                            <field name="NUM">-50</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="oled_cleardisplay" id="23">
+                                        <next>
+                                          <block type="multimedia_displaybmp" id="24">
+                                            <field name="BMP">fpac1.bmp</field>
+                                            <next>
+                                              <block type="oled_setcursor" id="25" inline="true">
+                                                <value name="STARTX">
+                                                  <block type="variables_get" id="26">
+                                                    <field name="VAR">valueX</field>
+                                                  </block>
+                                                </value>
+                                                <value name="STARTY">
+                                                  <block type="math_number" id="27">
+                                                    <field name="NUM">1</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="robot_delay" id="28" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="29">
+                                                        <field name="NUM">90</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="oled_cleardisplay" id="30">
+                                                        <next>
+                                                          <block type="multimedia_displaybmp" id="31">
+                                                            <field name="BMP">fpac2.bmp</field>
+                                                            <next>
+                                                              <block type="robot_delay" id="32" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_number" id="33">
+                                                                    <field name="NUM">90</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="oled_cleardisplay" id="34">
+                                                                    <next>
+                                                                      <block type="multimedia_displaybmp" id="35">
+                                                                        <field name="BMP">fpac3.bmp</field>
+                                                                        <next>
+                                                                          <block type="robot_delay" id="36" inline="true">
+                                                                            <value name="DELAY">
+                                                                              <block type="math_number" id="37">
+                                                                                <field name="NUM">90</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <value name="IF1">
+                      <block type="sensor_button" id="38">
+                        <field name="OBJECT">LEFT</field>
+                      </block>
+                    </value>
+                    <statement name="DO1">
+                      <block type="multimedia_playwav" id="39">
+                        <field name="WAV">pacman_w.wav</field>
+                        <next>
+                          <block type="controls_whileUntil" id="40" inline="false">
+                            <field name="MODE">WHILE</field>
+                            <value name="NUMBER">
+                              <block type="sensor_button" id="41">
+                                <field name="OBJECT">LEFT</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="variables_set" id="42" inline="true">
+                                <field name="VAR">valueX</field>
+                                <value name="VALUE">
+                                  <block type="math_arithmetic" id="43" inline="true">
+                                    <field name="OP">MINUS</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="44">
+                                        <field name="VAR">valueX</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="45">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="controls_if" id="46" inline="false">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="47" inline="true">
+                                        <field name="OP">LT</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="48">
+                                            <field name="VAR">valueX</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="49">
+                                            <field name="NUM">-64</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="variables_set" id="50" inline="true">
+                                        <field name="VAR">valueX</field>
+                                        <value name="VALUE">
+                                          <block type="math_number" id="51">
+                                            <field name="NUM">128</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="oled_cleardisplay" id="52">
+                                        <next>
+                                          <block type="multimedia_displaybmp" id="53">
+                                            <field name="BMP">bpac1.bmp</field>
+                                            <next>
+                                              <block type="oled_setcursor" id="54" inline="true">
+                                                <value name="STARTX">
+                                                  <block type="variables_get" id="55">
+                                                    <field name="VAR">valueX</field>
+                                                  </block>
+                                                </value>
+                                                <value name="STARTY">
+                                                  <block type="math_number" id="56">
+                                                    <field name="NUM">1</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="robot_delay" id="57" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="58">
+                                                        <field name="NUM">90</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="oled_cleardisplay" id="59">
+                                                        <next>
+                                                          <block type="multimedia_displaybmp" id="60">
+                                                            <field name="BMP">bpac2.bmp</field>
+                                                            <next>
+                                                              <block type="robot_delay" id="61" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_number" id="62">
+                                                                    <field name="NUM">90</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="oled_cleardisplay" id="63">
+                                                                    <next>
+                                                                      <block type="multimedia_displaybmp" id="64">
+                                                                        <field name="BMP">fpac3.bmp</field>
+                                                                        <next>
+                                                                          <block type="robot_delay" id="65" inline="true">
+                                                                            <value name="DELAY">
+                                                                              <block type="math_number" id="66">
+                                                                                <field name="NUM">90</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <value name="IF2">
+                      <block type="sensor_button" id="67">
+                        <field name="OBJECT">DOWN</field>
+                      </block>
+                    </value>
+                    <statement name="DO2">
+                      <block type="multimedia_playwav" id="68">
+                        <field name="WAV">pacman_w.wav</field>
+                        <next>
+                          <block type="controls_whileUntil" id="69" inline="false">
+                            <field name="MODE">WHILE</field>
+                            <value name="NUMBER">
+                              <block type="sensor_button" id="70">
+                                <field name="OBJECT">DOWN</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="variables_set" id="71" inline="true">
+                                <field name="VAR">valueX</field>
+                                <value name="VALUE">
+                                  <block type="math_arithmetic" id="72" inline="true">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="73">
+                                        <field name="VAR">valueY</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="74">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="controls_if" id="75" inline="false">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="76" inline="true">
+                                        <field name="OP">GT</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="77">
+                                            <field name="VAR">valueY</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="78">
+                                            <field name="NUM">-64</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="variables_set" id="79" inline="true">
+                                        <field name="VAR">valueY</field>
+                                        <value name="VALUE">
+                                          <block type="math_number" id="80">
+                                            <field name="NUM">-64</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="oled_cleardisplay" id="81">
+                                        <next>
+                                          <block type="multimedia_displaybmp" id="82">
+                                            <field name="BMP">dpac1.bmp</field>
+                                            <next>
+                                              <block type="oled_setcursor" id="83" inline="true">
+                                                <value name="STARTX">
+                                                  <block type="math_number" id="84">
+                                                    <field name="NUM">1</field>
+                                                  </block>
+                                                </value>
+                                                <value name="STARTY">
+                                                  <block type="variables_get" id="85">
+                                                    <field name="VAR">valueY</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="robot_delay" id="86" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="87">
+                                                        <field name="NUM">90</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="oled_cleardisplay" id="88">
+                                                        <next>
+                                                          <block type="multimedia_displaybmp" id="89">
+                                                            <field name="BMP">dpac2.bmp</field>
+                                                            <next>
+                                                              <block type="robot_delay" id="90" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_number" id="91">
+                                                                    <field name="NUM">90</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="oled_cleardisplay" id="92">
+                                                                    <next>
+                                                                      <block type="multimedia_displaybmp" id="93">
+                                                                        <field name="BMP">fpac3.bmp</field>
+                                                                        <next>
+                                                                          <block type="robot_delay" id="94" inline="true">
+                                                                            <value name="DELAY">
+                                                                              <block type="math_number" id="95">
+                                                                                <field name="NUM">90</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <value name="IF3">
+                      <block type="sensor_button" id="96">
+                        <field name="OBJECT">UP</field>
+                      </block>
+                    </value>
+                    <statement name="DO3">
+                      <block type="multimedia_playwav" id="97">
+                        <field name="WAV">pacman_w.wav</field>
+                        <next>
+                          <block type="controls_whileUntil" id="98" inline="false">
+                            <field name="MODE">WHILE</field>
+                            <value name="NUMBER">
+                              <block type="sensor_button" id="99">
+                                <field name="OBJECT">UP</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="variables_set" id="100" inline="true">
+                                <field name="VAR">valueY</field>
+                                <value name="VALUE">
+                                  <block type="math_arithmetic" id="101" inline="true">
+                                    <field name="OP">MINUS</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="102">
+                                        <field name="VAR">valueY</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="103">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="controls_if" id="104" inline="false">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="105" inline="true">
+                                        <field name="OP">LT</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="106">
+                                            <field name="VAR">valueY</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="107">
+                                            <field name="NUM">-64</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="variables_set" id="108" inline="true">
+                                        <field name="VAR">valueY</field>
+                                        <value name="VALUE">
+                                          <block type="math_number" id="109">
+                                            <field name="NUM">64</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="oled_cleardisplay" id="110">
+                                        <next>
+                                          <block type="multimedia_displaybmp" id="111">
+                                            <field name="BMP">upac1.bmp</field>
+                                            <next>
+                                              <block type="oled_setcursor" id="112" inline="true">
+                                                <value name="STARTX">
+                                                  <block type="math_number" id="113">
+                                                    <field name="NUM">90</field>
+                                                  </block>
+                                                </value>
+                                                <value name="STARTY">
+                                                  <block type="variables_get" id="114">
+                                                    <field name="VAR">valueY</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="robot_delay" id="115" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="116">
+                                                        <field name="NUM">90</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="oled_cleardisplay" id="117">
+                                                        <next>
+                                                          <block type="multimedia_displaybmp" id="118">
+                                                            <field name="BMP">upac2.bmp</field>
+                                                            <next>
+                                                              <block type="robot_delay" id="119" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_number" id="120">
+                                                                    <field name="NUM">90</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="oled_cleardisplay" id="121">
+                                                                    <next>
+                                                                      <block type="multimedia_displaybmp" id="122">
+                                                                        <field name="BMP">fpac3.bmp</field>
+                                                                        <next>
+                                                                          <block type="robot_delay" id="123" inline="true">
+                                                                            <value name="DELAY">
+                                                                              <block type="math_number" id="124">
+                                                                                <field name="NUM">90</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
               </block>
-            </value>
+            </statement>
             <next>
-              <block type="controls_if" id="8" inline="false">
-                <mutation elseif="3"></mutation>
-                <value name="IF0">
-                  <block type="sensor_button" id="9">
-                    <field name="OBJECT">RIGHT</field>
-                  </block>
-                </value>
-                <statement name="DO0">
-                  <block type="multimedia_playwav" id="10">
-                    <field name="WAV">pacman_w.wav</field>
-                    <next>
-                      <block type="controls_whileUntil" id="11" inline="false">
-                        <field name="MODE">WHILE</field>
-                        <value name="NUMBER">
-                          <block type="sensor_button" id="12">
-                            <field name="OBJECT">RIGHT</field>
-                          </block>
-                        </value>
-                        <statement name="DO">
-                          <block type="variables_set" id="13" inline="true">
-                            <field name="VAR">value</field>
-                            <value name="VALUE">
-                              <block type="math_arithmetic" id="14" inline="true">
-                                <field name="OP">ADD</field>
-                                <value name="A">
-                                  <block type="variables_get" id="15">
-                                    <field name="VAR">value</field>
-                                  </block>
-                                </value>
-                                <value name="B">
-                                  <block type="math_number" id="16">
-                                    <field name="NUM">10</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="controls_if" id="17" inline="false">
-                                <value name="IF0">
-                                  <block type="logic_compare" id="18" inline="true">
-                                    <field name="OP">GT</field>
-                                    <value name="A">
-                                      <block type="variables_get" id="19">
-                                        <field name="VAR">value</field>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="math_number" id="20">
-                                        <field name="NUM">128</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <statement name="DO0">
-                                  <block type="variables_set" id="21" inline="true">
-                                    <field name="VAR">value</field>
-                                    <value name="VALUE">
-                                      <block type="math_number" id="22">
-                                        <field name="NUM">-50</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </statement>
-                                <next>
-                                  <block type="oled_cleardisplay" id="23">
-                                    <next>
-                                      <block type="multimedia_displaybmp" id="24">
-                                        <field name="BMP">fpac1.bmp</field>
-                                        <next>
-                                          <block type="oled_setcursor" id="25" inline="true">
-                                            <value name="STARTX">
-                                              <block type="variables_get" id="26">
-                                                <field name="VAR">value</field>
-                                              </block>
-                                            </value>
-                                            <value name="STARTY">
-                                              <block type="math_number" id="27">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="robot_delay" id="28" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="29">
-                                                    <field name="NUM">90</field>
-                                                  </block>
-                                                </value>
-                                                <next>
-                                                  <block type="oled_cleardisplay" id="30">
-                                                    <next>
-                                                      <block type="multimedia_displaybmp" id="31">
-                                                        <field name="BMP">fpac2.bmp</field>
-                                                        <next>
-                                                          <block type="robot_delay" id="32" inline="true">
-                                                            <value name="DELAY">
-                                                              <block type="math_number" id="33">
-                                                                <field name="NUM">90</field>
-                                                              </block>
-                                                            </value>
-                                                            <next>
-                                                              <block type="oled_cleardisplay" id="34">
-                                                                <next>
-                                                                  <block type="multimedia_displaybmp" id="35">
-                                                                    <field name="BMP">fpac3.bmp</field>
-                                                                    <next>
-                                                                      <block type="robot_delay" id="36" inline="true">
-                                                                        <value name="DELAY">
-                                                                          <block type="math_number" id="37">
-                                                                            <field name="NUM">90</field>
-                                                                          </block>
-                                                                        </value>
-                                                                      </block>
-                                                                    </next>
-                                                                  </block>
-                                                                </next>
-                                                              </block>
-                                                            </next>
-                                                          </block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-                <value name="IF1">
-                  <block type="sensor_button" id="38">
-                    <field name="OBJECT">LEFT</field>
-                  </block>
-                </value>
-                <statement name="DO1">
-                  <block type="multimedia_playwav" id="39">
-                    <field name="WAV">pacman_w.wav</field>
-                    <next>
-                      <block type="controls_whileUntil" id="40" inline="false">
-                        <field name="MODE">WHILE</field>
-                        <value name="NUMBER">
-                          <block type="sensor_button" id="41">
-                            <field name="OBJECT">LEFT</field>
-                          </block>
-                        </value>
-                        <statement name="DO">
-                          <block type="variables_set" id="42" inline="true">
-                            <field name="VAR">value</field>
-                            <value name="VALUE">
-                              <block type="math_arithmetic" id="43" inline="true">
-                                <field name="OP">MINUS</field>
-                                <value name="A">
-                                  <block type="variables_get" id="44">
-                                    <field name="VAR">value</field>
-                                  </block>
-                                </value>
-                                <value name="B">
-                                  <block type="math_number" id="45">
-                                    <field name="NUM">10</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="controls_if" id="46" inline="false">
-                                <value name="IF0">
-                                  <block type="logic_compare" id="47" inline="true">
-                                    <field name="OP">LT</field>
-                                    <value name="A">
-                                      <block type="variables_get" id="48">
-                                        <field name="VAR">value</field>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="math_number" id="49">
-                                        <field name="NUM">-64</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <statement name="DO0">
-                                  <block type="variables_set" id="50" inline="true">
-                                    <field name="VAR">value</field>
-                                    <value name="VALUE">
-                                      <block type="math_number" id="51">
-                                        <field name="NUM">128</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </statement>
-                                <next>
-                                  <block type="oled_cleardisplay" id="52">
-                                    <next>
-                                      <block type="multimedia_displaybmp" id="53">
-                                        <field name="BMP">bpac1.bmp</field>
-                                        <next>
-                                          <block type="oled_setcursor" id="54" inline="true">
-                                            <value name="STARTX">
-                                              <block type="variables_get" id="55">
-                                                <field name="VAR">value</field>
-                                              </block>
-                                            </value>
-                                            <value name="STARTY">
-                                              <block type="math_number" id="56">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="robot_delay" id="57" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="58">
-                                                    <field name="NUM">90</field>
-                                                  </block>
-                                                </value>
-                                                <next>
-                                                  <block type="oled_cleardisplay" id="59">
-                                                    <next>
-                                                      <block type="multimedia_displaybmp" id="60">
-                                                        <field name="BMP">bpac2.bmp</field>
-                                                        <next>
-                                                          <block type="robot_delay" id="61" inline="true">
-                                                            <value name="DELAY">
-                                                              <block type="math_number" id="62">
-                                                                <field name="NUM">90</field>
-                                                              </block>
-                                                            </value>
-                                                            <next>
-                                                              <block type="oled_cleardisplay" id="63">
-                                                                <next>
-                                                                  <block type="multimedia_displaybmp" id="64">
-                                                                    <field name="BMP">fpac3.bmp</field>
-                                                                    <next>
-                                                                      <block type="robot_delay" id="65" inline="true">
-                                                                        <value name="DELAY">
-                                                                          <block type="math_number" id="66">
-                                                                            <field name="NUM">90</field>
-                                                                          </block>
-                                                                        </value>
-                                                                      </block>
-                                                                    </next>
-                                                                  </block>
-                                                                </next>
-                                                              </block>
-                                                            </next>
-                                                          </block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-                <value name="IF2">
-                  <block type="sensor_button" id="67">
-                    <field name="OBJECT">DOWN</field>
-                  </block>
-                </value>
-                <statement name="DO2">
-                  <block type="multimedia_playwav" id="68">
-                    <field name="WAV">pacman_w.wav</field>
-                    <next>
-                      <block type="controls_whileUntil" id="69" inline="false">
-                        <field name="MODE">WHILE</field>
-                        <value name="NUMBER">
-                          <block type="sensor_button" id="70">
-                            <field name="OBJECT">DOWN</field>
-                          </block>
-                        </value>
-                        <statement name="DO">
-                          <block type="variables_set" id="71" inline="true">
-                            <field name="VAR">value</field>
-                            <value name="VALUE">
-                              <block type="math_arithmetic" id="72" inline="true">
-                                <field name="OP">ADD</field>
-                                <value name="A">
-                                  <block type="variables_get" id="73">
-                                    <field name="VAR">value</field>
-                                  </block>
-                                </value>
-                                <value name="B">
-                                  <block type="math_number" id="74">
-                                    <field name="NUM">10</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="controls_if" id="75" inline="false">
-                                <value name="IF0">
-                                  <block type="logic_compare" id="76" inline="true">
-                                    <field name="OP">GT</field>
-                                    <value name="A">
-                                      <block type="variables_get" id="77">
-                                        <field name="VAR">value</field>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="math_number" id="78">
-                                        <field name="NUM">-64</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <statement name="DO0">
-                                  <block type="variables_set" id="79" inline="true">
-                                    <field name="VAR">value</field>
-                                    <value name="VALUE">
-                                      <block type="math_number" id="80">
-                                        <field name="NUM">-64</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </statement>
-                                <next>
-                                  <block type="oled_cleardisplay" id="81">
-                                    <next>
-                                      <block type="multimedia_displaybmp" id="82">
-                                        <field name="BMP">dpac1.bmp</field>
-                                        <next>
-                                          <block type="oled_setcursor" id="83" inline="true">
-                                            <value name="STARTX">
-                                              <block type="math_number" id="84">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
-                                            <value name="STARTY">
-                                              <block type="variables_get" id="85">
-                                                <field name="VAR">value</field>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="robot_delay" id="86" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="87">
-                                                    <field name="NUM">90</field>
-                                                  </block>
-                                                </value>
-                                                <next>
-                                                  <block type="oled_cleardisplay" id="88">
-                                                    <next>
-                                                      <block type="multimedia_displaybmp" id="89">
-                                                        <field name="BMP">dpac2.bmp</field>
-                                                        <next>
-                                                          <block type="robot_delay" id="90" inline="true">
-                                                            <value name="DELAY">
-                                                              <block type="math_number" id="91">
-                                                                <field name="NUM">90</field>
-                                                              </block>
-                                                            </value>
-                                                            <next>
-                                                              <block type="oled_cleardisplay" id="92">
-                                                                <next>
-                                                                  <block type="multimedia_displaybmp" id="93">
-                                                                    <field name="BMP">fpac3.bmp</field>
-                                                                    <next>
-                                                                      <block type="robot_delay" id="94" inline="true">
-                                                                        <value name="DELAY">
-                                                                          <block type="math_number" id="95">
-                                                                            <field name="NUM">90</field>
-                                                                          </block>
-                                                                        </value>
-                                                                      </block>
-                                                                    </next>
-                                                                  </block>
-                                                                </next>
-                                                              </block>
-                                                            </next>
-                                                          </block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-                <value name="IF3">
-                  <block type="sensor_button" id="96">
-                    <field name="OBJECT">UP</field>
-                  </block>
-                </value>
-                <statement name="DO3">
-                  <block type="multimedia_playwav" id="97">
-                    <field name="WAV">pacman_w.wav</field>
-                    <next>
-                      <block type="controls_whileUntil" id="98" inline="false">
-                        <field name="MODE">WHILE</field>
-                        <value name="NUMBER">
-                          <block type="sensor_button" id="99">
-                            <field name="OBJECT">UP</field>
-                          </block>
-                        </value>
-                        <statement name="DO">
-                          <block type="variables_set" id="100" inline="true">
-                            <field name="VAR">value</field>
-                            <value name="VALUE">
-                              <block type="math_arithmetic" id="101" inline="true">
-                                <field name="OP">MINUS</field>
-                                <value name="A">
-                                  <block type="variables_get" id="102">
-                                    <field name="VAR">value</field>
-                                  </block>
-                                </value>
-                                <value name="B">
-                                  <block type="math_number" id="103">
-                                    <field name="NUM">10</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="controls_if" id="104" inline="false">
-                                <value name="IF0">
-                                  <block type="logic_compare" id="105" inline="true">
-                                    <field name="OP">LT</field>
-                                    <value name="A">
-                                      <block type="variables_get" id="106">
-                                        <field name="VAR">value</field>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="math_number" id="107">
-                                        <field name="NUM">-64</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <statement name="DO0">
-                                  <block type="variables_set" id="108" inline="true">
-                                    <field name="VAR">value</field>
-                                    <value name="VALUE">
-                                      <block type="math_number" id="109">
-                                        <field name="NUM">64</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </statement>
-                                <next>
-                                  <block type="oled_cleardisplay" id="110">
-                                    <next>
-                                      <block type="multimedia_displaybmp" id="111">
-                                        <field name="BMP">upac1.bmp</field>
-                                        <next>
-                                          <block type="oled_setcursor" id="112" inline="true">
-                                            <value name="STARTX">
-                                              <block type="math_number" id="113">
-                                                <field name="NUM">90</field>
-                                              </block>
-                                            </value>
-                                            <value name="STARTY">
-                                              <block type="variables_get" id="114">
-                                                <field name="VAR">value</field>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="robot_delay" id="115" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="116">
-                                                    <field name="NUM">90</field>
-                                                  </block>
-                                                </value>
-                                                <next>
-                                                  <block type="oled_cleardisplay" id="117">
-                                                    <next>
-                                                      <block type="multimedia_displaybmp" id="118">
-                                                        <field name="BMP">upac2.bmp</field>
-                                                        <next>
-                                                          <block type="robot_delay" id="119" inline="true">
-                                                            <value name="DELAY">
-                                                              <block type="math_number" id="120">
-                                                                <field name="NUM">90</field>
-                                                              </block>
-                                                            </value>
-                                                            <next>
-                                                              <block type="oled_cleardisplay" id="121">
-                                                                <next>
-                                                                  <block type="multimedia_displaybmp" id="122">
-                                                                    <field name="BMP">fpac3.bmp</field>
-                                                                    <next>
-                                                                      <block type="robot_delay" id="123" inline="true">
-                                                                        <value name="DELAY">
-                                                                          <block type="math_number" id="124">
-                                                                            <field name="NUM">90</field>
-                                                                          </block>
-                                                                        </value>
-                                                                      </block>
-                                                                    </next>
-                                                                  </block>
-                                                                </next>
-                                                              </block>
-                                                            </next>
-                                                          </block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-              </block>
+              <block type="oled_cleardisplay" id="125"></block>
             </next>
           </block>
-        </statement>
-        <next>
-          <block type="oled_cleardisplay" id="125"></block>
         </next>
       </block>
     </next>
