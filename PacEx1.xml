@@ -143,21 +143,47 @@
                                                                                   </block>
                                                                                 </value>
                                                                                 <next>
-                                                                                  <block type="multimedia_stopupdate" id="157">
+                                                                                  <block type="multimedia_stopupdate" id="177">
                                                                                     <next>
-                                                                                      <block type="oled_cleardisplay" id="38">
+                                                                                      <block type="oled_cleardisplay" id="179">
                                                                                         <next>
-                                                                                          <block type="multimedia_displaybmp" id="39">
-                                                                                            <field name="BMP">fpac3</field>
+                                                                                          <block type="multimedia_displaybmp" id="180">
+                                                                                            <field name="BMP">fpac1</field>
                                                                                             <next>
-                                                                                              <block type="multimedia_doupdate" id="158">
+                                                                                              <block type="multimedia_doupdate" id="181">
                                                                                                 <next>
-                                                                                                  <block type="robot_delay" id="40" inline="true">
+                                                                                                  <block type="robot_delay" id="182" inline="true">
                                                                                                     <value name="DELAY">
-                                                                                                      <block type="math_number" id="41">
+                                                                                                      <block type="math_number" id="183">
                                                                                                         <field name="NUM">60</field>
                                                                                                       </block>
                                                                                                     </value>
+                                                                                                    <next>
+                                                                                                      <block type="multimedia_stopupdate" id="184">
+                                                                                                        <next>
+                                                                                                          <block type="oled_cleardisplay" id="38">
+                                                                                                            <next>
+                                                                                                              <block type="multimedia_displaybmp" id="39">
+                                                                                                                <field name="BMP">fpac3</field>
+                                                                                                                <next>
+                                                                                                                  <block type="multimedia_doupdate" id="158">
+                                                                                                                    <next>
+                                                                                                                      <block type="robot_delay" id="40" inline="true">
+                                                                                                                        <value name="DELAY">
+                                                                                                                          <block type="math_number" id="41">
+                                                                                                                            <field name="NUM">60</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </next>
+                                                                                                                  </block>
+                                                                                                                </next>
+                                                                                                              </block>
+                                                                                                            </next>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
                                                                                                   </block>
                                                                                                 </next>
                                                                                               </block>
