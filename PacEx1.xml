@@ -43,7 +43,7 @@
                       </block>
                     </value>
                     <statement name="DO0">
-                      <block type="multimedia_playwav" id="12" disabled="true">
+                      <block type="multimedia_playwav" id="12">
                         <field name="WAV">pacman_w.wav</field>
                         <next>
                           <block type="controls_whileUntil" id="13" inline="false">
@@ -180,7 +180,7 @@
                       </block>
                     </value>
                     <statement name="DO1">
-                      <block type="multimedia_playwav" id="41" disabled="true">
+                      <block type="multimedia_playwav" id="41">
                         <field name="WAV">pacman_w.wav</field>
                         <next>
                           <block type="controls_whileUntil" id="42" inline="false">
@@ -317,7 +317,7 @@
                       </block>
                     </value>
                     <statement name="DO2">
-                      <block type="multimedia_playwav" id="70" disabled="true">
+                      <block type="multimedia_playwav" id="70">
                         <field name="WAV">pacman_w.wav</field>
                         <next>
                           <block type="controls_whileUntil" id="71" inline="false">
@@ -464,7 +464,7 @@
                       </block>
                     </value>
                     <statement name="DO3">
-                      <block type="multimedia_playwav" id="101" disabled="true">
+                      <block type="multimedia_playwav" id="101">
                         <field name="WAV">pacman_w.wav</field>
                         <next>
                           <block type="controls_whileUntil" id="102" inline="false">
