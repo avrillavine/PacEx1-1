@@ -260,53 +260,77 @@
                                       </block>
                                     </statement>
                                     <next>
-                                      <block type="oled_cleardisplay" id="56">
+                                      <block type="multimedia_stopupdate" id="159">
                                         <next>
-                                          <block type="multimedia_displaybmp" id="57">
-                                            <field name="BMP">bpac1.bmp</field>
+                                          <block type="oled_cleardisplay" id="56">
                                             <next>
-                                              <block type="oled_setcursor" id="58" inline="true">
-                                                <value name="STARTX">
-                                                  <block type="variables_get" id="59">
-                                                    <field name="VAR">valueX</field>
-                                                  </block>
-                                                </value>
-                                                <value name="STARTY">
-                                                  <block type="variables_get" id="60">
-                                                    <field name="VAR">valueY</field>
-                                                  </block>
-                                                </value>
+                                              <block type="multimedia_displaybmp" id="57">
+                                                <field name="BMP">bpac1.bmp</field>
                                                 <next>
-                                                  <block type="robot_delay" id="61" inline="true">
-                                                    <value name="DELAY">
-                                                      <block type="math_number" id="62">
-                                                        <field name="NUM">90</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="multimedia_doupdate" id="160">
                                                     <next>
-                                                      <block type="oled_cleardisplay" id="63">
+                                                      <block type="oled_setcursor" id="58" inline="true">
+                                                        <value name="STARTX">
+                                                          <block type="variables_get" id="59">
+                                                            <field name="VAR">valueX</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="STARTY">
+                                                          <block type="variables_get" id="60">
+                                                            <field name="VAR">valueY</field>
+                                                          </block>
+                                                        </value>
                                                         <next>
-                                                          <block type="multimedia_displaybmp" id="64">
-                                                            <field name="BMP">bpac2.bmp</field>
+                                                          <block type="robot_delay" id="61" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="62">
+                                                                <field name="NUM">60</field>
+                                                              </block>
+                                                            </value>
                                                             <next>
-                                                              <block type="robot_delay" id="65" inline="true">
-                                                                <value name="DELAY">
-                                                                  <block type="math_number" id="66">
-                                                                    <field name="NUM">90</field>
-                                                                  </block>
-                                                                </value>
+                                                              <block type="multimedia_stopupdate" id="164">
                                                                 <next>
-                                                                  <block type="oled_cleardisplay" id="67">
+                                                                  <block type="oled_cleardisplay" id="63">
                                                                     <next>
-                                                                      <block type="multimedia_displaybmp" id="68">
-                                                                        <field name="BMP">fpac3.bmp</field>
+                                                                      <block type="multimedia_displaybmp" id="64">
+                                                                        <field name="BMP">bpac2.bmp</field>
                                                                         <next>
-                                                                          <block type="robot_delay" id="69" inline="true">
-                                                                            <value name="DELAY">
-                                                                              <block type="math_number" id="70">
-                                                                                <field name="NUM">90</field>
+                                                                          <block type="multimedia_doupdate" id="161">
+                                                                            <next>
+                                                                              <block type="robot_delay" id="65" inline="true">
+                                                                                <value name="DELAY">
+                                                                                  <block type="math_number" id="66">
+                                                                                    <field name="NUM">60</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="multimedia_stopupdate" id="163">
+                                                                                    <next>
+                                                                                      <block type="oled_cleardisplay" id="67">
+                                                                                        <next>
+                                                                                          <block type="multimedia_displaybmp" id="68">
+                                                                                            <field name="BMP">fpac3.bmp</field>
+                                                                                            <next>
+                                                                                              <block type="multimedia_doupdate" id="162">
+                                                                                                <next>
+                                                                                                  <block type="robot_delay" id="69" inline="true">
+                                                                                                    <value name="DELAY">
+                                                                                                      <block type="math_number" id="70">
+                                                                                                        <field name="NUM">60</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
                                                                               </block>
-                                                                            </value>
+                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
@@ -397,53 +421,77 @@
                                       </block>
                                     </statement>
                                     <next>
-                                      <block type="oled_cleardisplay" id="85">
+                                      <block type="multimedia_stopupdate" id="165">
                                         <next>
-                                          <block type="multimedia_displaybmp" id="86">
-                                            <field name="BMP">dpac1.bmp</field>
+                                          <block type="oled_cleardisplay" id="85">
                                             <next>
-                                              <block type="oled_setcursor" id="87" inline="true">
-                                                <value name="STARTX">
-                                                  <block type="variables_get" id="88">
-                                                    <field name="VAR">valueX</field>
-                                                  </block>
-                                                </value>
-                                                <value name="STARTY">
-                                                  <block type="variables_get" id="89">
-                                                    <field name="VAR">valueY</field>
-                                                  </block>
-                                                </value>
+                                              <block type="multimedia_displaybmp" id="86">
+                                                <field name="BMP">dpac1.bmp</field>
                                                 <next>
-                                                  <block type="robot_delay" id="90" inline="true">
-                                                    <value name="DELAY">
-                                                      <block type="math_number" id="91">
-                                                        <field name="NUM">90</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="multimedia_doupdate" id="166">
                                                     <next>
-                                                      <block type="oled_cleardisplay" id="92">
+                                                      <block type="oled_setcursor" id="87" inline="true">
+                                                        <value name="STARTX">
+                                                          <block type="variables_get" id="88">
+                                                            <field name="VAR">valueX</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="STARTY">
+                                                          <block type="variables_get" id="89">
+                                                            <field name="VAR">valueY</field>
+                                                          </block>
+                                                        </value>
                                                         <next>
-                                                          <block type="multimedia_displaybmp" id="93">
-                                                            <field name="BMP">dpac2.bmp</field>
+                                                          <block type="robot_delay" id="90" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="91">
+                                                                <field name="NUM">90</field>
+                                                              </block>
+                                                            </value>
                                                             <next>
-                                                              <block type="robot_delay" id="94" inline="true">
-                                                                <value name="DELAY">
-                                                                  <block type="math_number" id="95">
-                                                                    <field name="NUM">90</field>
-                                                                  </block>
-                                                                </value>
+                                                              <block type="multimedia_stopupdate" id="168">
                                                                 <next>
-                                                                  <block type="oled_cleardisplay" id="96">
+                                                                  <block type="oled_cleardisplay" id="92">
                                                                     <next>
-                                                                      <block type="multimedia_displaybmp" id="97">
-                                                                        <field name="BMP">fpac3.bmp</field>
+                                                                      <block type="multimedia_displaybmp" id="93">
+                                                                        <field name="BMP">dpac2.bmp</field>
                                                                         <next>
-                                                                          <block type="robot_delay" id="98" inline="true">
-                                                                            <value name="DELAY">
-                                                                              <block type="math_number" id="99">
-                                                                                <field name="NUM">90</field>
+                                                                          <block type="multimedia_doupdate" id="169">
+                                                                            <next>
+                                                                              <block type="robot_delay" id="94" inline="true">
+                                                                                <value name="DELAY">
+                                                                                  <block type="math_number" id="95">
+                                                                                    <field name="NUM">90</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="multimedia_stopupdate" id="167">
+                                                                                    <next>
+                                                                                      <block type="oled_cleardisplay" id="96">
+                                                                                        <next>
+                                                                                          <block type="multimedia_displaybmp" id="97">
+                                                                                            <field name="BMP">fpac3.bmp</field>
+                                                                                            <next>
+                                                                                              <block type="multimedia_doupdate" id="170">
+                                                                                                <next>
+                                                                                                  <block type="robot_delay" id="98" inline="true">
+                                                                                                    <value name="DELAY">
+                                                                                                      <block type="math_number" id="99">
+                                                                                                        <field name="NUM">90</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
                                                                               </block>
-                                                                            </value>
+                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
@@ -534,53 +582,77 @@
                                       </block>
                                     </statement>
                                     <next>
-                                      <block type="oled_cleardisplay" id="114">
+                                      <block type="multimedia_stopupdate" id="171">
                                         <next>
-                                          <block type="multimedia_displaybmp" id="115">
-                                            <field name="BMP">upac1.bmp</field>
+                                          <block type="oled_cleardisplay" id="114">
                                             <next>
-                                              <block type="oled_setcursor" id="116" inline="true">
-                                                <value name="STARTX">
-                                                  <block type="variables_get" id="117">
-                                                    <field name="VAR">valueX</field>
-                                                  </block>
-                                                </value>
-                                                <value name="STARTY">
-                                                  <block type="variables_get" id="118">
-                                                    <field name="VAR">valueY</field>
-                                                  </block>
-                                                </value>
+                                              <block type="multimedia_displaybmp" id="115">
+                                                <field name="BMP">upac1.bmp</field>
                                                 <next>
-                                                  <block type="robot_delay" id="119" inline="true">
-                                                    <value name="DELAY">
-                                                      <block type="math_number" id="120">
-                                                        <field name="NUM">90</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="multimedia_doupdate" id="172">
                                                     <next>
-                                                      <block type="oled_cleardisplay" id="121">
+                                                      <block type="oled_setcursor" id="116" inline="true">
+                                                        <value name="STARTX">
+                                                          <block type="variables_get" id="117">
+                                                            <field name="VAR">valueX</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="STARTY">
+                                                          <block type="variables_get" id="118">
+                                                            <field name="VAR">valueY</field>
+                                                          </block>
+                                                        </value>
                                                         <next>
-                                                          <block type="multimedia_displaybmp" id="122">
-                                                            <field name="BMP">upac2.bmp</field>
+                                                          <block type="robot_delay" id="119" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="120">
+                                                                <field name="NUM">90</field>
+                                                              </block>
+                                                            </value>
                                                             <next>
-                                                              <block type="robot_delay" id="123" inline="true">
-                                                                <value name="DELAY">
-                                                                  <block type="math_number" id="124">
-                                                                    <field name="NUM">90</field>
-                                                                  </block>
-                                                                </value>
+                                                              <block type="multimedia_stopupdate" id="174">
                                                                 <next>
-                                                                  <block type="oled_cleardisplay" id="125">
+                                                                  <block type="oled_cleardisplay" id="121">
                                                                     <next>
-                                                                      <block type="multimedia_displaybmp" id="126">
-                                                                        <field name="BMP">fpac3.bmp</field>
+                                                                      <block type="multimedia_displaybmp" id="122">
+                                                                        <field name="BMP">upac2.bmp</field>
                                                                         <next>
-                                                                          <block type="robot_delay" id="127" inline="true">
-                                                                            <value name="DELAY">
-                                                                              <block type="math_number" id="128">
-                                                                                <field name="NUM">90</field>
+                                                                          <block type="multimedia_doupdate" id="176">
+                                                                            <next>
+                                                                              <block type="robot_delay" id="123" inline="true">
+                                                                                <value name="DELAY">
+                                                                                  <block type="math_number" id="124">
+                                                                                    <field name="NUM">90</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="multimedia_stopupdate" id="173">
+                                                                                    <next>
+                                                                                      <block type="oled_cleardisplay" id="125">
+                                                                                        <next>
+                                                                                          <block type="multimedia_displaybmp" id="126">
+                                                                                            <field name="BMP">fpac3.bmp</field>
+                                                                                            <next>
+                                                                                              <block type="multimedia_doupdate" id="175">
+                                                                                                <next>
+                                                                                                  <block type="robot_delay" id="127" inline="true">
+                                                                                                    <value name="DELAY">
+                                                                                                      <block type="math_number" id="128">
+                                                                                                        <field name="NUM">90</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
                                                                               </block>
-                                                                            </value>
+                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
