@@ -295,7 +295,7 @@
                                                 <next>
                                                   <block type="multimedia_doupdate" id="160">
                                                     <next>
-                                                      <block type="oled_setcursor" id="58" inline="true">
+                                                      <block type="oled_setcursor" id="58" inline="true" disabled="true">
                                                         <value name="STARTX">
                                                           <block type="variables_get" id="59">
                                                             <field name="VAR">valueX</field>
