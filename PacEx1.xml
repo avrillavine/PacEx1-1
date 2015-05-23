@@ -380,8 +380,8 @@
                                             <next>
                                               <block type="oled_setcursor" id="87" inline="true">
                                                 <value name="STARTX">
-                                                  <block type="math_number" id="133">
-                                                    <field name="NUM">1</field>
+                                                  <block type="variables_get" id="138">
+                                                    <field name="VAR">valueX</field>
                                                   </block>
                                                 </value>
                                                 <value name="STARTY">
@@ -517,8 +517,8 @@
                                             <next>
                                               <block type="oled_setcursor" id="118" inline="true">
                                                 <value name="STARTX">
-                                                  <block type="math_number" id="134">
-                                                    <field name="NUM">1</field>
+                                                  <block type="variables_get" id="139">
+                                                    <field name="VAR">valueX</field>
                                                   </block>
                                                 </value>
                                                 <value name="STARTY">
