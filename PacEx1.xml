@@ -102,7 +102,7 @@
                                       <block type="oled_cleardisplay" id="25">
                                         <next>
                                           <block type="multimedia_displaybmp" id="26">
-                                            <field name="BMP">fpac1.bmp</field>
+                                            <field name="BMP">fpac1</field>
                                             <next>
                                               <block type="oled_setcursor" id="27" inline="true">
                                                 <value name="STARTX">
@@ -126,7 +126,7 @@
                                                       <block type="oled_cleardisplay" id="32">
                                                         <next>
                                                           <block type="multimedia_displaybmp" id="33">
-                                                            <field name="BMP">fpac2.bmp</field>
+                                                            <field name="BMP">fpac2</field>
                                                             <next>
                                                               <block type="robot_delay" id="34" inline="true">
                                                                 <value name="DELAY">
@@ -138,7 +138,7 @@
                                                                   <block type="oled_cleardisplay" id="36">
                                                                     <next>
                                                                       <block type="multimedia_displaybmp" id="37">
-                                                                        <field name="BMP">fpac3.bmp</field>
+                                                                        <field name="BMP">fpac3</field>
                                                                         <next>
                                                                           <block type="robot_delay" id="38" inline="true">
                                                                             <value name="DELAY">
