@@ -30,8 +30,8 @@
                   </block>
                 </value>
                 <value name="STARTY">
-                  <block type="math_number" id="9">
-                    <field name="NUM">1</field>
+                  <block type="variables_get" id="142">
+                    <field name="VAR">valueY</field>
                   </block>
                 </value>
                 <next>
