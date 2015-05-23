@@ -123,7 +123,7 @@
                                                           <block type="robot_delay" id="32" inline="true">
                                                             <value name="DELAY">
                                                               <block type="math_number" id="33">
-                                                                <field name="NUM">90</field>
+                                                                <field name="NUM">60</field>
                                                               </block>
                                                             </value>
                                                             <next>
@@ -139,7 +139,7 @@
                                                                               <block type="robot_delay" id="36" inline="true">
                                                                                 <value name="DELAY">
                                                                                   <block type="math_number" id="37">
-                                                                                    <field name="NUM">90</field>
+                                                                                    <field name="NUM">60</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <next>
@@ -155,7 +155,7 @@
                                                                                                   <block type="robot_delay" id="40" inline="true">
                                                                                                     <value name="DELAY">
                                                                                                       <block type="math_number" id="41">
-                                                                                                        <field name="NUM">90</field>
+                                                                                                        <field name="NUM">60</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                   </block>
